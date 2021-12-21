@@ -59,6 +59,7 @@ RUN touch /etc/ldap.conf
 ADD common-session /etc/pam.d/common-session
 ADD common-auth /etc/pam.d/common-auth
 ADD nsswitch.conf /etc/nsswitch.conf
+ADD common /etc/condor/config.d/common
 
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q build-essential apt-utils &&\
