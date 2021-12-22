@@ -7,8 +7,8 @@ echo '# For details, run condor_config_val use role:get_htcondor_execute' >> ${C
 echo 'use role:get_htcondor_execute' >> ${CONFIG_FILE}
 
 # filesystemdomian
-echo "FILESYSTEM_DOMAIN ${FILESYSTEM_DOMAIN}"  >> ${CONFIG_FILE}
-echo "UID_DOMAIN ${FILESYSTEM_DOMAIN}"  >> ${CONFIG_FILE}
+echo "FILESYSTEM_DOMAIN = ${FILESYSTEM_DOMAIN}"  >> ${CONFIG_FILE}
+echo "UID_DOMAIN = ${FILESYSTEM_DOMAIN}"  >> ${CONFIG_FILE}
 echo "TRUST_UID_DOMAIN = TRUE"  >> ${CONFIG_FILE}
 echo "SOFT_UID_DOMAIN = TRUE"  >> ${CONFIG_FILE}
 
